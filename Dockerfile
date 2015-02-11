@@ -12,4 +12,4 @@ RUN         apt-get install -y redis-server mongodb-server nginx
 RUN         pip install supervisor pyzmq
 RUN         pip install 'https://github.com/dsociative/waitredis/archive/master.tar.gz'
 
-CMD         ["/usr/bin/supervisord"]
+CMD         ["/usr/local/bin/supervisord"]
